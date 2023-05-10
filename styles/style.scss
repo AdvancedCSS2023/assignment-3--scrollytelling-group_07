@@ -62,3 +62,30 @@ img {
     bottom:50px;
   }
 }
+
+
+.scene1-dolphin img {
+  position: absolute;
+  top: 44%;
+  left:30%;
+  width:20px;
+  height: auto;
+  border: 2px red solid;
+  animation: scene1-dolphin 3s ease;
+}
+
+//må fikses
+
+@keyframes scene1-dolphin {
+  0% {
+    top:44%;
+    left:44%
+  }
+  50% {
+   top:43%;
+   left:43%
+  }
+  100% {
+    top:42%;
+  }
+}
