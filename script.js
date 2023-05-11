@@ -1,14 +1,13 @@
-const imageContainer = document.querySelector('.image-container');
-const scene1bigfish = document.querySelector('.scene1-fish img');
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      scene1bigfish.classList.add('animate-fish');
-    } else {
-      scene1bigfish.classList.remove('animate-fish');
-    }
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
   });
-}, { threshold: 0.5 });
-
-observer.observe(imageContainer);
+  
+  const imageContainer = document.querySelector('.image-container');
+  observer.observe(imageContainer);
+  
