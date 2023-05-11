@@ -49,10 +49,153 @@ img {
   0% {
     bottom: 20px;
   }
+
   50% {
     bottom: 40px;
   }
+
   100% {
     bottom: 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+
+}
+
+.scene3 {
+  background: rgb(138,186,200);
+  background: linear-gradient(180deg, rgba(138,186,200,1) 0%, rgba(138,186,200,1) 37%, rgba(50,189,169,1) 37%, rgba(111,195,155,1) 62%, rgba(226,207,128,1) 74%);
+  height: 100vh;
+}
+
+.scene3 img {
+  position: absolute;
+  height: auto;
+  z-index: 1;
+}
+
+.scene3 img:nth-child(1) {
+  width: 300px;
+  bottom: 56%;
+  left: 45%;
+  animation: boat-bobbing 3s ease 0s infinite normal none;
+}
+
+.scene3 img:nth-child(2) {
+  width: 150px;
+  top: 34%;
+  left: 20%;
+  animation: boat-bobbing 4s ease 0s infinite normal none;
+}
+
+.scene3 img:nth-child(n+3) {
+  animation: pollution-pulsing 5s ease-in-out 0s infinite normal none;
+  z-index: 0;
+}
+
+.scene3 img:nth-child(3) {
+  width: 150px;
+  top: 42%;
+  left: 13%;
+}
+
+.scene3 img:nth-child(4) {
+  width: 200px;
+  top: 44%;
+  left: 30%;
+  animation-duration: 4.6s;
+}
+
+.scene3 img:nth-child(5) {
+  width: 50px;
+  top: 90%;
+  left: 85%;
+  animation: crab-walk 5s linear 0s infinite normal none;
+  z-index: 1;
+}
+
+.scene3 img:nth-child(n+6) {
+  animation: none;
+}
+
+.scene3 img:nth-child(6) {
+  width: 130px;
+  top: 90%;
+  left: 87%;
+}
+
+.scene3 img:nth-child(7) {
+  width: 40px;
+  top: 80%;
+  left: 25%;
+}
+
+@keyframes boat-bobbing {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translateY(0);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: translateY(8px);
+  }
+
+  55% {
+    animation-timing-function: ease-out;
+    transform: translateY(8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pollution-pulsing {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes crab-walk {
+	0%,
+	100% {
+		transform: translateX(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) translateY(20px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(-50px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(0px) rotate(-6deg);
+	}
+
+	60% {
+		transform: translateX(30px) rotate(6deg);
+	}
+
+	75% {
+		transform: translateX(50px) rotate(-6deg);
+	}
+
+  90% {
+		transform: translateX(0) translateY(-10px) rotate(4deg);
+	}
+}
+/*# sourceMappingURL=style.css.map */
