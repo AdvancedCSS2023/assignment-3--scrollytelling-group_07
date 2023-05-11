@@ -8,6 +8,6 @@ const observer = new IntersectionObserver(entries => {
     });
   });
   
-  const imageContainer = document.querySelector('.image-container');
-  observer.observe(imageContainer);
+  const imageContainers = document.querySelectorAll('.image-container');
+  imageContainers.forEach(container => observer.observe(container));
   
