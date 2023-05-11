@@ -167,7 +167,7 @@ img {
 }
 
 /* Scene 4 */
- .scene4-boat {
+.scene4-boat {
   width: 150px;
   top: 34%;
   left: 85%;
@@ -187,46 +187,6 @@ img {
   animation: scene-4-trash-toss 6s linear 0s 1 normal none;
 }
 
-@keyframes scene-4-guy-move {
-	0% {
-		opacity: 0;
-		transform: translateX(-100px);
-	}
-
-  30% {
-    opacity: 1;
-  }
-
-	50% {
-		transform: translateX(0);
-	}
-
-  55% {
-    transform: rotate(-5deg);
-  }
-
-  70% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes scene-4-trash-toss {
-	0% {
-		transform: translateX(145px) translateY(30px);
-	}
-
-  52% {
-    transform: translateX(145px) translateY(30px);
-  }
-
-	75% {
-		transform: translateX(70px) translateY(-130px) rotate(6turn);
-	}
-
-  100% {
-    transform: translateX(0) translateY(0) rotate(12turn);
-  }
-}
 
 /* Global animations */
 @keyframes boat-bobbing {
@@ -339,6 +299,47 @@ img {
 
   75% {
     transform: translateX(-10px) translateY(-30px) rotate(0);
+  }
+}
+
+@keyframes scene-4-guy-move {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  55% {
+    transform: rotate(-5deg);
+  }
+
+  70% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes scene-4-trash-toss {
+  0% {
+    transform: translateX(145px) translateY(30px);
+  }
+
+  52% {
+    transform: translateX(145px) translateY(30px);
+  }
+
+  75% {
+    transform: translateX(70px) translateY(-130px) rotate(6turn);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(12turn);
   }
 }
 
