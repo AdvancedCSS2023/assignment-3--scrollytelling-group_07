@@ -1,19 +1,18 @@
 /* Global styles */
 body {
   margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+
 
 /* Goal section styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 section {
@@ -35,7 +34,7 @@ img {
   width: auto;
 }
 
-.scene1-fish img {
+.visible .scene1-fish img {
   position: absolute;
   width: 140px;
   height: auto;
@@ -67,7 +66,7 @@ img {
   }
 }
 
-.scene1-splash img {
+.visible .scene1-splash img {
   position: absolute;
   top: 58%;
   left: 58%;
@@ -88,7 +87,7 @@ img {
   }
 }
 
-.scene1-dolphin img {
+.visible .scene1-dolphin img {
   position: absolute;
   top: 54%;
   left: 40%;
@@ -122,7 +121,7 @@ img {
   }
 }
 
-.scene1-brownfish img {
+.visible .scene1-brownfish img {
   position: absolute;
   bottom:25%;
   width:150px;
@@ -143,7 +142,7 @@ img {
 }
 
 
-.scene1-crab img {
+.visible .scene1-crab img {
   position: absolute;
   bottom:-2%;
   left:70%;
@@ -163,7 +162,7 @@ img {
 }
 
 
-.scene2-ship img {
+.visible .scene2-ship img {
   position: absolute;
   height:80px;
   top:45%;
@@ -183,7 +182,7 @@ img {
   }
 }
 
-.scene2-chemspill img{
+.visible .scene2-chemspill img{
   position: absolute;
   top:54%;
   left:23%;
@@ -193,15 +192,17 @@ img {
   animation: scene2-chemspill 15s ease;
 }
 
-/*FIX THE CHEM SPILL SIZE/WIDTH*/
+
 
 @keyframes scene2-chemspill {
   0%{
     left:23%;
-    width:200px;
+    width: 150px;
+    
   }
   50% {
-    left:30%
+    left:30%;
+    width:200px;
   }
   100% {
     left:35%;
@@ -209,7 +210,7 @@ img {
 }
 
 
-.scene2-bigfishdead img {
+.visible .scene2-bigfishdead img {
   position: absolute;
   bottom:10%;
   width: 120px;
@@ -222,11 +223,11 @@ img {
     bottom:30%;
   }
   100% {
-    bottom:10%
+    bottom:10%;
   }
 }
 
-.scene2-bluefishdead img {
+.visible .scene2-bluefishdead img {
   position: absolute;
   top:65%;
   left:30%;
@@ -246,7 +247,7 @@ img {
   }
 }
 
-.scene2-fish1 img {
+.visible .scene2-fish1 img {
   position:absolute;
   top:60%;
   width: 100px;
@@ -266,5 +267,26 @@ img {
     opacity: 0;
   }
 }
+
+.visible  .scene2-fish2 img {
+  position: absolute;
+  top:55%;
+  height: auto;
+  width: 100px;
+  transform: scaleX(-1);
+  animation: scene2-fish2 3s ease;
+}
+
+@keyframes scene2-fish2 {
+  0% { 
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
