@@ -1,0 +1,329 @@
+img {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+}
+
+.crab {
+    width: 50px;
+    top: 87%;
+    left: 85%;
+    animation: crab-walk 5s linear 0s infinite normal none;
+    z-index: 1;
+}
+
+.waves {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    opacity: 0.7;
+    animation: waves-crashing 12s linear 0s infinite normal forwards;
+}
+
+/* Scene 1 */
+.visible .scene1-fish img {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    z-index: 2;
+}
+
+.visible .scene1-splash img {
+    position: absolute;
+    top: 51%;
+    left: 58%;
+    width: 80px;
+    height: auto;
+    animation: scene1-splash 3s ease-out;
+}
+
+.visible .scene1-dolphin img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 40px;
+    height: auto;
+    animation: scene1-dolphin 7s ease;
+}
+
+.visible .scene1-brownfish img {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    width: 150px;
+    height: auto;
+    animation: scene1-brownfish 10s ease;
+}
+
+.scene1-swimmer {
+    position: absolute;
+}
+
+.scene1-bluefish img {
+    position: absolute;
+    width: 80px;
+    top: 42%;
+    left: 11%;
+}
+
+/* Scene 2 */
+.visible .scene2-ship img {
+    position: absolute;
+    height: 80px;
+    top: 30%;
+    left: 39%;
+    z-index: 2;
+    animation: scene2-ship 5s linear;
+}
+
+
+.visible .scene2-chemspill img {
+    position: absolute;
+    top: 44%;
+    left: 36%;
+    width: 150px;
+    height: auto;
+    scale: 1.5;
+    transform: rotate(180deg);
+    animation: scene2-chemspill 10s ease;
+}
+
+.visible .scene2-bigfishdead img {
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: auto;
+    animation: boat-bobbing 6s ease 0s infinite normal none;
+}
+
+.visible .scene2-bluefishdead img {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    width: 150px;
+    height: auto;
+    animation: boat-bobbing 5s ease 0s infinite normal none;
+}
+
+.visible .scene2-fish1 img {
+    position: absolute;
+    top: 55%;
+    right: 24%;
+    opacity: 0;
+    width: 100px;
+    height: auto;
+    animation: scene2-fish1 10s ease;
+}
+
+.visible .scene2-fish2 img {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    height: auto;
+    width: 100px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation: scene2-fish2 3s ease;
+}
+
+/* Scene 3 & 4 */
+.scene3-boat:nth-child(1) {
+    width: 300px;
+    bottom: 56%;
+    left: 45%;
+    animation: boat-bobbing 3s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.scene3-boat:nth-child(2) {
+    width: 150px;
+    top: 34%;
+    left: 20%;
+    animation: boat-bobbing 4s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.scene34-pollution {
+    animation: pollution-pulsing 5s ease-in-out 0s infinite normal none;
+    z-index: 0;
+}
+
+.scene34-pollution:nth-child(1) {
+    width: 150px;
+    top: 42%;
+    left: 13%;
+}
+
+.scene34-pollution:nth-child(2) {
+    width: 200px;
+    top: 44%;
+    left: 30%;
+    transform: rotate(180deg);
+    animation-duration: 4.6s;
+}
+
+.scene34-trash:nth-child(1) {
+    width: 130px;
+    top: 90%;
+    left: 87%;
+}
+
+.scene34-trash:nth-child(2) {
+    width: 40px;
+    top: 80%;
+    left: 25%;
+}
+
+.scene34-fish:nth-child(1) {
+    width: 130px;
+    height: auto;
+    top: 49%;
+    left: 70%;
+    animation: scene-3-fish-swim 3s ease-in-out 0s infinite normal none;
+}
+
+.scene34-fish:nth-child(2) {
+    width: 110px;
+    top: 50%;
+    left: 23%;
+    animation: boat-bobbing 6s ease 0s infinite normal none;
+}
+
+.scene34-fish:nth-child(3) {
+    width: 90px;
+    top: 80%;
+    left: 45%;
+    animation: scene-3-fish-flail 2s ease-in-out 0s infinite normal none;
+}
+
+/* Scene 4 */
+.scene4-boat {
+    width: 150px;
+    top: 34%;
+    left: 85%;
+    animation: boat-bobbing 4s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.visible .scene4-guy {
+    width: 180px;
+    top: 60%;
+    left: 12%;
+    animation: scene-4-guy-move 6s ease-in-out 0s 1 normal none;
+}
+
+.visible .scene4 .scene34-trash:nth-child(2) {
+    top: 70%;
+    left: 14%;
+    animation: scene-4-trash-toss 6s linear 0s 1 normal none;
+}
+
+/* Scenes 5 and 6 */
+.scene5-bag img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 97%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene5-boat img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    animation: scene5-boat 6s linear;
+}
+
+.scene5-cup img {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 95%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.scene5-fish img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene5-green-puddle img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 55%;
+    left: 57%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: scene5-chemspill 12s ease;
+}
+
+.scene5-man img {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 80%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+
+.scene5-woman img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 87%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene6-blue-fish img {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.visible .scene6-crab img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 80%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.visible .scene6-orange-fish img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
