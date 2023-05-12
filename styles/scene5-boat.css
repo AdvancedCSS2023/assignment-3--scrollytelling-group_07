@@ -1,0 +1,8 @@
+.scene5-boat img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=scene5-boat.css.map */

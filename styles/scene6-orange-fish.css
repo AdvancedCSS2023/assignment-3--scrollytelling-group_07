@@ -1,0 +1,14 @@
+.scene6-orange-fish img {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: fish-swim;
+          animation-name: fish-swim;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}/*# sourceMappingURL=scene6-orange-fish.css.map */

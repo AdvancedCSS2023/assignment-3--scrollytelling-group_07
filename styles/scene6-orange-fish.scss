@@ -1,0 +1,11 @@
+.scene6-orange-fish img {
+    position: absolute;
+    width: 100px;
+    height:auto;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+  }
