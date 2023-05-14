@@ -1,0 +1,330 @@
+img {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+}
+
+.image-container__crab {
+    width: 50px;
+    top: 87%;
+    left: 85%;
+    animation: image-container__crab-walk 5s linear 0s infinite normal none;
+    z-index: 1;
+}
+
+.image-container__waves {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    opacity: 0.7;
+    animation: image-container__waves-crashing 12s linear 0s infinite normal forwards;
+}
+
+/* Scene 1 */
+.visible .image-container__fish--scene1 img {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    z-index: 2;
+}
+
+.visible .image-container__splash--scene1 img {
+    position: absolute;
+    top: 51%;
+    left: 58%;
+    width: 80px;
+    height: auto;
+    animation: image-container__splash--scene1 3s ease-out;
+}
+
+.visible .image-container__dolphin--scene1 img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 40px;
+    height: auto;
+    opacity: 0;
+    animation: image-container__dolphin--scene1 7s ease;
+}
+
+.visible .image-container__brownfish--scene1 img {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    width: 150px;
+    height: auto;
+    animation: image-container__brownfish--scene1 10s ease;
+}
+
+.image-container__fish--scene1-swimmer {
+    position: absolute;
+}
+
+.image-container__bluefish--scene1 img {
+    position: absolute;
+    width: 80px;
+    top: 42%;
+    left: 11%;
+}
+
+/* Scene 2 */
+.visible .image-container__ship--scene2 img {
+    position: absolute;
+    height: 80px;
+    top: 30%;
+    left: 39%;
+    z-index: 2;
+    animation: image-container__ship--scene2 5s linear;
+}
+
+
+.visible .image-container__chemspill--scene2 img {
+    position: absolute;
+    top: 44%;
+    left: 36%;
+    width: 150px;
+    height: auto;
+    scale: 1.5;
+    transform: rotate(180deg);
+    animation: image-container__chemspill--scene2 10s ease;
+}
+
+.visible .image-container__bigfishdead--scene2 img {
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: auto;
+    animation: boat-bobbing 6s ease 0s infinite normal none;
+}
+
+.visible .image-container__bluefishdead--scene2 img {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    width: 150px;
+    height: auto;
+    animation: boat-bobbing 5s ease 0s infinite normal none;
+}
+
+.visible .image-container__fish1--scene2 img {
+    position: absolute;
+    top: 55%;
+    right: 24%;
+    opacity: 0;
+    width: 100px;
+    height: auto;
+    animation: image-container__fish1--scene2 10s ease;
+}
+
+.visible .image-container__fish2--scene2 img {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    height: auto;
+    width: 100px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation: image-container__fish2--scene2 3s ease;
+}
+
+/* Scene 3 & 4 */
+.image-container__image-container__boat--scene3:nth-child(1) {
+    width: 300px;
+    bottom: 56%;
+    left: 45%;
+    animation: boat-bobbing 3s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.image-container__image-container__boat--scene3:nth-child(2) {
+    width: 150px;
+    top: 34%;
+    left: 20%;
+    animation: boat-bobbing 4s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.image-container__image-container__pollution--scene34 {
+    animation: pollution-pulsing 5s ease-in-out 0s infinite normal none;
+    z-index: 0;
+}
+
+.image-container__image-container__pollution--scene34:nth-child(1) {
+    width: 150px;
+    top: 42%;
+    left: 13%;
+}
+
+.image-container__image-container__pollution--scene34:nth-child(2) {
+    width: 200px;
+    top: 44%;
+    left: 30%;
+    transform: rotate(180deg);
+    animation-duration: 4.6s;
+}
+
+.image-container__image-container__trash--scene34:nth-child(1) {
+    width: 130px;
+    top: 90%;
+    left: 87%;
+}
+
+.image-container__image-container__trash--scene34:nth-child(2) {
+    width: 40px;
+    top: 80%;
+    left: 25%;
+}
+
+.image-container__fish--image-container__scene34:nth-child(1) {
+    width: 130px;
+    height: auto;
+    top: 49%;
+    left: 70%;
+    animation: scene-3-fish-swim 3s ease-in-out 0s infinite normal none;
+}
+
+.image-container__fish--image-container__scene34:nth-child(2) {
+    width: 110px;
+    top: 50%;
+    left: 23%;
+    animation: boat-bobbing 6s ease 0s infinite normal none;
+}
+
+.image-container__fish--image-container__scene34:nth-child(3) {
+    width: 90px;
+    top: 80%;
+    left: 45%;
+    animation: scene-3-fish-flail 2s ease-in-out 0s infinite normal none;
+}
+
+/* Scene 4 */
+.image-container__boat--scene4 {
+    width: 150px;
+    top: 34%;
+    left: 85%;
+    animation: boat-bobbing 4s ease 0s infinite normal none;
+    z-index: 2;
+}
+
+.visible .scene4-guy {
+    width: 180px;
+    top: 60%;
+    left: 12%;
+    animation: scene-4-guy-move 6s ease-in-out 0s 1 normal none;
+}
+
+.visible .scene4 .image-container__image-container__trash--scene34:nth-child(2) {
+    top: 70%;
+    left: 14%;
+    animation: scene-4-trash-toss 6s linear 0s 1 normal none;
+}
+
+/* Scenes 5 and 6 */
+.scene5-bag img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 97%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene5-boat img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    animation: scene5-boat 6s linear;
+}
+
+.scene5-cup img {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 95%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.scene5-fish img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene5-green-puddle img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 55%;
+    left: 57%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: scene5-chemspill 12s ease;
+}
+
+.scene5-man img {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 80%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+
+.scene5-woman img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 87%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+
+.visible .scene6-blue-fish img {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.visible .scene6-image-container__crab img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 80%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.visible .scene6-orange-fish img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation-name: fish-swim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
