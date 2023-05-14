@@ -1,5 +1,5 @@
 /* Global animations */
-@keyframes waves-crashing {
+@keyframes image-container__waves-crashing {
 	0% {
 		opacity: 0.4;
 		left: -60%;
@@ -56,7 +56,7 @@
     }
   }
   
-  @keyframes crab-walk {
+  @keyframes image-container__crab-walk {
   
     0%,
     100% {
@@ -111,7 +111,7 @@
     }
   }
   
-  @keyframes scene1-splash {
+  @keyframes image-container__splash--scene1 {
     0% {
       opacity: 0;
     }
@@ -123,7 +123,7 @@
     }
   }
   
-  @keyframes scene1-dolphin {
+  @keyframes image-container__dolphin--scene1 {
     0% {
       top: 40%;
     }
@@ -147,7 +147,7 @@
     }
   }
   
-  @keyframes scene1-brownfish {
+  @keyframes image-container__brownfish--scene1 {
     0% {
       left: 20%;
     }
@@ -159,7 +159,7 @@
     }
   }
   
-  @keyframes scene2-ship {
+  @keyframes image-container__ship--scene2 {
     0% {
       left: 9%;
     }
@@ -168,7 +168,7 @@
     }
   }
   
-  @keyframes scene2-chemspill {
+  @keyframes image-container__chemspill--scene2 {
     0% {
       opacity: 0;
     }
@@ -181,7 +181,7 @@
     }
   }
   
-  @keyframes scene2-fish1 {
+  @keyframes image-container__fish1--scene2 {
     0% {
       right: 30%;
       opacity: 1;
@@ -195,7 +195,7 @@
     }
   }
   
-  @keyframes scene2-fish2 {
+  @keyframes image-container__fish2--scene2 {
     0% {
       opacity: 1;
     }
