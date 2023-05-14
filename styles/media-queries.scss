@@ -29,7 +29,7 @@
       overflow: auto; 
     }
     #flip-phone-message {
-      visibility: hidden !important;
+      display: none !important;
     }
   }
   
@@ -39,8 +39,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-play-state:paused !important;
-    transition:none !important;
+    animation: none !important;
+    transition: none !important;
   }
 }
 
@@ -52,8 +52,10 @@
     background-color: black;
     
   }
-  h1 {
-    text-shadow: none;
+
+  .section__image-container {
+    background: rgb(59,42,121);
+    background: linear-gradient(180deg, rgba(59,42,121,1) 0%, rgba(59,42,121,1) 37%, rgba(30,133,149,1) 37%, rgba(30,133,149,1) 62%, rgba(173,157,88,1) 74%);
   }
 }
 

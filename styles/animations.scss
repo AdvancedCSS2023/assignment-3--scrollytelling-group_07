@@ -134,16 +134,19 @@
       top: 33%;
       left: 39%;
       transform: rotate(-40deg);
+      opacity: 1;
     }
     50% {
       top: 33%;
       transform: rotate(-50deg);
       left: 38.8%;
+      opacity: 1;
     }
     100% {
       top: 44%;
       transform: rotate(-60deg);
       left: 38.8%;
+      opacity: 0;
     }
   }
   

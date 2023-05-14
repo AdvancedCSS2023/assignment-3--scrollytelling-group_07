@@ -13,42 +13,36 @@
     height: 100%;
     padding: 10px;
     background-color: #000000;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     font-size: 16px;
     z-index: 9999;
   }
 }
-
-
 /* Define styles for landscape mode */
 @media only screen and (orientation: landscape) {
   body {
     overflow: auto;
   }
   #flip-phone-message {
-    visibility: hidden !important;
+    display: none !important;
   }
 }
-
-
 /*For reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-play-state: paused !important;
+    animation: none !important;
     transition: none !important;
   }
 }
-
-
-
 /*for color scheme */
 /* Dark mode style */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
   }
-  h1 {
-    text-shadow: none;
+  .section__image-container {
+    background: rgb(59, 42, 121);
+    background: linear-gradient(180deg, rgb(59, 42, 121) 0%, rgb(59, 42, 121) 37%, rgb(30, 133, 149) 37%, rgb(30, 133, 149) 62%, rgb(173, 157, 88) 74%);
   }
-} /*# sourceMappingURL=media-queries.css.map */
+}/*# sourceMappingURL=media-queries.css.map */
