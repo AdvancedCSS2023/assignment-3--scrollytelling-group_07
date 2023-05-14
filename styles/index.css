@@ -260,6 +260,62 @@
   }
 }
 
+
+/*media quieries*/
+/*for screen orientation */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  body {
+    overflow: hidden;
+  }
+  #flip-phone-message {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    z-index: 9999;
+  }
+}
+
+
+/* Define styles for landscape mode */
+@media only screen and (orientation: landscape) {
+  body {
+    overflow: auto;
+  }
+  #flip-phone-message {
+    visibility: hidden !important;
+  }
+}
+
+
+/*For reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+}
+
+
+
+/*for color scheme */
+/* Dark mode style */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  h1 {
+    text-shadow: none;
+  }
+}
+
 /* Global */
 body {
   margin: 0 auto;
