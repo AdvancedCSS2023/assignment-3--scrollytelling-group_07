@@ -9,7 +9,7 @@ Why is the project useful?
 The project raises awareness about the issue of ocean pollution and its impact on sea creatures. It educates users on the problem and the importance of taking action to address it. Additionally, the interactive and engaging nature of the page helps to hold the user's attention and make the information more memorable.
 
 How can users get started with the project?
-Users can access the project by visiting the website or page where it is hosted. They can then begin scrolling through the page to experience the interactive effects and animations. No additional setup or installation is required.
+Users can access the project by visiting the website ( https://advancedcss2023.github.io/assignment-3--scrollytelling-group_07/ ) or page where it is hosted. They can then begin scrolling through the page to experience the interactive effects and animations. No additional setup or installation is required.
 
 Where can users get help with the project?
 If users encounter any issues or have questions about the project, they can consult the developers for further assistance.
